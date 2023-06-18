@@ -1,0 +1,113 @@
+object Form1: TForm1
+  Left = 314
+  Height = 490
+  Top = 231
+  Width = 689
+  Caption = 'Form1'
+  ClientHeight = 490
+  ClientWidth = 689
+  DesignTimePPI = 120
+  OnCreate = FormCreate
+  LCLVersion = '2.2.6.0'
+  object Label1: TLabel
+    Left = 196
+    Height = 20
+    Top = 24
+    Width = 308
+    Caption = 'Калькулятор сложных и простых процентов'
+    ParentColor = False
+  end
+  object nachLabel: TLabel
+    Left = 56
+    Height = 20
+    Top = 103
+    Width = 127
+    Caption = 'Начальная сумма:'
+    ParentColor = False
+  end
+  object perLabel: TLabel
+    Left = 56
+    Height = 20
+    Top = 152
+    Width = 204
+    Caption = 'Процентная ставка (годовая)'
+    ParentColor = False
+  end
+  object periodLabel: TLabel
+    Left = 56
+    Height = 20
+    Top = 208
+    Width = 295
+    Caption = 'Период начисления процентов в месяцах'
+    ParentColor = False
+  end
+  object rezLabel: TLabel
+    Left = 56
+    Height = 20
+    Top = 264
+    Width = 69
+    Caption = 'Результат:'
+    ParentColor = False
+  end
+  object nachEdit: TEdit
+    Left = 472
+    Height = 28
+    Top = 103
+    Width = 100
+    TabOrder = 0
+  end
+  object perEdit: TEdit
+    Left = 472
+    Height = 28
+    Top = 152
+    Width = 100
+    TabOrder = 1
+  end
+  object ComboBox1: TComboBox
+    Left = 447
+    Height = 28
+    Top = 208
+    Width = 125
+    ItemHeight = 20
+    TabOrder = 2
+    Text = 'ComboBox1'
+  end
+  object rezMemo: TMemo
+    Left = 240
+    Height = 88
+    Top = 264
+    Width = 332
+    Lines.Strings = (
+      'rezMemo'
+    )
+    ReadOnly = True
+    TabOrder = 3
+  end
+  object prostButton: TButton
+    Left = 56
+    Height = 31
+    Top = 376
+    Width = 214
+    Caption = 'Рассчитать простой процент'
+    OnClick = prostButtonClick
+    TabOrder = 4
+  end
+  object slButton: TButton
+    Left = 392
+    Height = 31
+    Top = 376
+    Width = 254
+    Caption = 'Рассчитать сложный процент'
+    OnClick = slButtonClick
+    TabOrder = 5
+  end
+  object Button1: TButton
+    Left = 280
+    Height = 31
+    Top = 376
+    Width = 94
+    Caption = 'Очистить'
+    OnClick = Button1Click
+    TabOrder = 6
+  end
+end
